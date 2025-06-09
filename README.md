@@ -14,12 +14,12 @@ A dynamic web application for calculating and tracking GPA based on assignment g
 
 ## 🚀 Demo
 
-[Live Demo on GitHub Pages](https://IH-honnette.github.io/alu-gpa-calculator)
+[Live Demo on GitHub Pages](https://ih-honnette.github.io/alu-gpa-calculator/)
 
 ## 📁 Project Structure
 
 ```
-gpa-calculator/
+alu-gpa-calculator/
 ├── index.html          # Main HTML structure
 ├── styles.css          # CSS styling and animations
 ├── script.js           # JavaScript functionality
@@ -66,7 +66,6 @@ gpa-calculator/
 3. **Deploy to GitHub Pages**:
    - Go to repository Settings → Pages
    - Select "Deploy from branch" → main branch
-   - Your site will be available at `https://your-username.github.io/gpa-calculator`
 
 ## 👥 Group Members
 
