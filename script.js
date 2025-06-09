@@ -204,3 +204,24 @@ function saveToStorage() {
 }
 
 
+function loadFromStorage() {
+    try {
+        const saved = localStorage.getItem('gpaCalculatorData');
+        if (saved) {
+            assignments = JSON.parse(saved);
+            console.log('Data loaded from localStorage');
+        }
+    } catch (error) {
+        console.log('localStorage not available:', error);
+        assignments = [];
+    }
+}
+
+function init() {
+    loadFromStorage();
+    renderAssignments();
+    calculateGPA();
+    setupEventListeners();
+}
+
+init();
