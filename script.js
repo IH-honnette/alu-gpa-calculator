@@ -14,8 +14,7 @@ function setupEventListeners() {
     addButton.addEventListener('click', addAssignment);
     clearButton.addEventListener('click', clearAllAssignments);
     
-    assignmentNameInput.addEventListener('keypress', function(e) {
-        if (e.key === 'Enter') {
+    assignmentNameInput.addEventListener('keypress', function(e)         if (e.key === 'Enter') {
             assignmentGradeInput.focus();
         }
     });
@@ -204,24 +203,4 @@ function saveToStorage() {
     }
 }
 
-function loadFromStorage() {
-    try {
-        const saved = localStorage.getItem('gpaCalculatorData');
-        if (saved) {
-            assignments = JSON.parse(saved);
-            console.log('Data loaded from localStorage');
-        }
-    } catch (error) {
-        console.log('localStorage not available:', error);
-        assignments = [];
-    }
-}
 
-function init() {
-    loadFromStorage();
-    renderAssignments();
-    calculateGPA();
-    setupEventListeners();
-}
-
-init();
