@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <h1>GPA Calculator</h1>
+        
+        <section class="instructions">
+            <p><strong>Instructions:</strong></p>
+            <ul>
+                <li>Enter assignment name and grade (0-5)</li>
+                <li>Press "S" key to log all data to console</li>
+                <li>Data is automatically saved and persists after refresh</li>
+            </ul>
+        </section>
+
+        <section class="input-section">
+            <div class="input-group">
+                <input type="text" id="assignmentName" placeholder="Assignment Name" maxlength="50">
+                <input type="number" id="assignmentGrade" placeholder="Grade (0-5)" min="0" max="5" step="0.1">
+                <button id="addButton">Add Assignment</button>
+            </div>
+            <div class="error-message" id="errorMessage"></div>
+        </section>
+
+        <div class="gpa-display" id="gpaDisplay">
+            <div class="gpa-value" id="gpaValue">0.00</div>
+            <div class="gpa-label">Current GPA</div>
+        </div>
+
+        <section class="assignments-section">
+            <div class="assignments-header">
+                <h2>Assignments</h2>
+                <button id="clearButton" style="background: linear-gradient(135deg, #ff6b6b, #ee5a52);">Clear All</button>
+            </div>
+            <div id="assignmentsList">
+                <div class="no-assignments">
+                    No assignments added yet. Add your first assignment above!
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
