@@ -231,3 +231,26 @@ button:active {
 }
 
 
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    .input-group {
+        flex-direction: column;
+    }
+    
+    input {
+        min-width: unset;
+    }
+    
+    .gpa-value {
+        font-size: 2rem;
+    }
+    
+    .assignments-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
